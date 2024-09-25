@@ -1,0 +1,123 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #f0f0f0;
+  background-image: url('https://thumbs.dreamstime.com/b/futuristic-robot-artificial-intelligence-concept-d-rendering-technology-development-ai-machine-learning-global-robotic-bionic-172973415.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.image-generator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 2rem;
+}
+
+.image-generator .content {
+  text-align: center;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.image-generator p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.generate-form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prompt-input {
+  padding: 0.5rem;
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.generate-btn, #upload-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  margin-top: 1rem;
+}
+
+.upload-section {
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.image-gallery, .saved-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.img-card {
+  position: relative;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.gallery-image, .saved-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.img-card:hover {
+  transform: translateY(-5px);
+}
+
+.save-btn, .remove-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+/* Saved Images Section */
+.saved-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid for saved images */
+  gap: 1rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}

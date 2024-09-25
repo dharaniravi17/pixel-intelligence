@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIXEL INTELLIGENCE</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <h1>PIXEL INTELLIGENCE</h1>
+    <nav>
+      <button id="view-saved-btn">View Saved Images</button>
+    </nav>
+  </header>
+  <section class="image-generator">
+    <div class="content">
+      <p>Provide the text that you would like to be visualized into images</p>
+      <form action="#" class="generate-form">
+        <input class="prompt-input" type="text" placeholder="Enter Your Text Here" required>
+        <button type="submit" class="generate-btn">Generate Art</button>
+      </form>
+    </div>
+    <div class="upload-section">
+      <h2>Upload Your Images</h2>
+      <input type="file" id="image-upload" accept="image/*" multiple>
+      <button id="upload-btn">Upload</button>
+    </div>
+  </section>
+  <section class="image-gallery">
+    <!-- Dynamically generated image cards will appear here -->
+  </section>
+  <section class="saved-gallery" style="display: none;">
+    <h2>Saved Images</h2>
+    <div class="saved-images">
+      <!-- Saved images will be displayed here -->
+    </div>
+  </section>
+</body>
+</html>
